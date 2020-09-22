@@ -47,14 +47,11 @@
     box = $("#box");
 		
 function sp() {
-	var funcAr = ['ja', 'nej']; 
-var upper = funcAr.length; 
-function getRandInt(u) { 
-  return Math.floor(Math.random() * Math.floor(u)); 
-} 
-var functionName = funcAr[getRandInt(upper)]; 
-// the function is then available in this call 
-window["functionName"]();
+	if(Math.round(Math.random()) == 1){
+	ja();
+	} else {
+	nej();
+	}
 	
 }
 		
