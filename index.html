@@ -47,7 +47,15 @@
     box = $("#box");
 		
 function sp() {
-	ja();
+	var funcAr = ['ja', 'nej']; 
+var upper = funcAr.length; 
+function getRandInt(u) { 
+  return Math.floor(Math.random() * Math.floor(u)); 
+} 
+var functionName = funcAr[getRandInt(upper)]; 
+// the function is then available in this call 
+window["functionName"]();
+	
 }
 		
 		function ja(){
@@ -55,6 +63,13 @@ function sp() {
 	document.getElementById('btn').innerText = "Ja!";
 	document.body.style.animation = "none";
 	document.body.style.backgroundColor = "rgb(140, 199, 63)";
+		}
+		
+		function nej(){
+			document.getElementById('btn').style.animation = "none";
+	document.getElementById('btn').innerText = "Nej!";
+	document.body.style.animation = "none";
+	document.body.style.backgroundColor = "rgb(247, 142, 86)";
 		}
 
 function foo()
