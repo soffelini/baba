@@ -6,7 +6,12 @@
     <script>
       function getStr() {
     var urlid = getParameterByName('id');
-        alert(urlid);
+        let keys = ['eee', 'ooo']
+        if(keys.includes(urlid)){
+          alert(urlid);
+        } else {
+          alert('Fel: ' urlid);
+        }
       }
       
       function getParameterByName(name, url = window.location.href) {
