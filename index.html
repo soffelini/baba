@@ -46,7 +46,7 @@ form.addEventListener('submit', handleForm);
 function check() {
 	
 	if(document.getElementById('txt').value == '010'){
-	window.location.replace("https://soffelini.github.io/baba/home.html");
+	window.location.replace("https://soffelini.github.io/baba/home.html?id=" + document.getElementById('txt').value);
 	} else {
 	alert('fel');
 	}
